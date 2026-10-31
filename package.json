@@ -1,0 +1,13 @@
+{
+  "name": "agentspur",
+  "version": "0.1.0",
+  "description": "Records what AI agents change in a folder, and brings it back. No account, no cloud, no dependencies.",
+  "bin": { "agentspur": "./agentspur.js" },
+  "files": ["agentspur.js", "store.js", "diff.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "keywords": ["agent", "ai", "claude-code", "codex", "cursor", "undo", "rewind", "audit", "file-history", "snapshot"],
+  "license": "MIT",
+  "author": "ID MANDAT (https://idmandat.com), built with Claude",
+  "repository": { "type": "git", "url": "https://github.com/idmandat/agentspur" },
+  "homepage": "https://github.com/idmandat/agentspur#readme"
+}
