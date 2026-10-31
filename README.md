@@ -10,15 +10,15 @@ A small command-line tool that records every file change in a folder while an AI
 - Node 20 or newer, on macOS, Linux and Windows
 
 ```
-npx agentspur watch
+npx github:idmandat/agentspur watch
 ```
 
-That is all. Leave it running in a terminal while the agent works.
+That is all. Leave it running in a terminal while the agent works. (It installs straight from this repository; once it is on npm the command shortens to `npx agentspur watch`.)
 
 ## What it looks like
 
 ```
-$ npx agentspur watch
+$ npx github:idmandat/agentspur watch
 agentspur is watching /Users/me/shop
 212 files remembered as the starting point.
 Stop with Ctrl+C. Timeline: agentspur log
@@ -32,7 +32,7 @@ Stop with Ctrl+C. Timeline: agentspur log
 Something went wrong at step 4?
 
 ```
-$ npx agentspur back 4
+$ npx github:idmandat/agentspur back 4
 Going back to before step #4 would:
   recreate public/images/hero.png
   restore  package.json
@@ -78,9 +78,11 @@ To remove agentspur from a project, delete the `.agentspur/` folder. Nothing els
 ## Install for good
 
 ```
-npm install -g agentspur
+npm install -g github:idmandat/agentspur
 agentspur watch
 ```
+
+After that every command is just `agentspur ...`.
 
 ## Why this exists
 
@@ -90,4 +92,4 @@ Built by Claude together with ID MANDAT. MIT licensed. Questions and bugs: open 
 
 ---
 
-*Deutsch:* agentspur zeichnet auf, was KI-Agenten in einem Ordner ändern, und kann jede Änderung zurückholen. Kein Konto, keine Cloud, keine Abhängigkeiten. `npx agentspur watch` startet die Aufzeichnung, `agentspur log` zeigt die Zeitleiste, `agentspur back <Schritt>` spult zurück. Ein Werkzeug von [ID MANDAT](https://idmandat.com), gebaut zusammen mit Claude.
+*Deutsch:* agentspur zeichnet auf, was KI-Agenten in einem Ordner ändern, und kann jede Änderung zurückholen. Kein Konto, keine Cloud, keine Abhängigkeiten. `npx github:idmandat/agentspur watch` startet die Aufzeichnung, `agentspur log` zeigt die Zeitleiste, `agentspur back <Schritt>` spult zurück. Ein Werkzeug von [ID MANDAT](https://idmandat.com), gebaut zusammen mit Claude.
